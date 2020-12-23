@@ -43,6 +43,7 @@ public class TrainsController {
         trains.setArvHour(updatedTrains.getArvHour());
         trains.setArvMinute(updatedTrains.getArvMinute());
         trains.setTrainType(updatedTrains.getTrainType());
+        trains.setFee(updatedTrains.getFee());
         return trainsRepository.save(trains);
     }
 

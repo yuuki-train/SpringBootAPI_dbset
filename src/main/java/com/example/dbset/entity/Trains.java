@@ -23,6 +23,8 @@ public class Trains {
 
     private String trainType;
 
+    private int fee;
+
 
 
 
@@ -60,6 +62,10 @@ public class Trains {
         return trainType;
     }
 
+    public int getFee(){
+        return fee;
+    }
+
 
     //setter
     public void setId(String id){
@@ -94,4 +100,7 @@ public class Trains {
         this.trainType = trainType;
     }
 
+    public void setFee(int fee){
+        this.fee = fee;
+    }
 }
