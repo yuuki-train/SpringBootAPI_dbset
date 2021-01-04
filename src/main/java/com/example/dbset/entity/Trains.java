@@ -9,6 +9,8 @@ public class Trains {
     @Id
     private String id;
 
+    private String line;
+
     private String departure;
 
     private int depHour;
@@ -25,6 +27,7 @@ public class Trains {
 
     private int fee;
 
+    private int change;
 
 
 
@@ -32,6 +35,10 @@ public class Trains {
     //getter
     public String getId(){
         return id;
+    }
+
+    public String getLine(){
+        return line;
     }
 
     public String getDeparture(){
@@ -66,11 +73,15 @@ public class Trains {
         return fee;
     }
 
+    public int getChange(){return change;}
+
 
     //setter
     public void setId(String id){
         this.id = id;
     }
+
+    public void setLine(String line) { this.line = line; }
 
     public void setDeparture(String departure){
         this.departure = departure;
@@ -103,4 +114,6 @@ public class Trains {
     public void setFee(int fee){
         this.fee = fee;
     }
+
+    public void setChange(int change){ this.change = change; }
 }

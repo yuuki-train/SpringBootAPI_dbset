@@ -36,6 +36,7 @@ public class TrainsController {
         Trains trains = trainsRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException());
         trains.setId(updatedTrains.getId());
+        trains.setLine(updatedTrains.getLine());
         trains.setDeparture(updatedTrains.getDeparture());
         trains.setDepHour(updatedTrains.getDepHour());
         trains.setDepMinute(updatedTrains.getDepMinute());
@@ -44,6 +45,7 @@ public class TrainsController {
         trains.setArvMinute(updatedTrains.getArvMinute());
         trains.setTrainType(updatedTrains.getTrainType());
         trains.setFee(updatedTrains.getFee());
+        trains.setChange(updatedTrains.getChange());
         return trainsRepository.save(trains);
     }
 
