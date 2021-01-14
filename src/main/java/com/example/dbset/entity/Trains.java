@@ -27,6 +27,8 @@ public class Trains {
 
     private String trainType;
 
+    private boolean addFee;
+
     private int fair;
 
     private int fee;
@@ -77,6 +79,10 @@ public class Trains {
         return trainType;
     }
 
+    public boolean getAddFee(){
+        return addFee;
+    }
+
     public int getFair(){
         return fair;
     }
@@ -123,6 +129,10 @@ public class Trains {
 
     public void setTrainType(String trainType){
         this.trainType = trainType;
+    }
+
+    public void setAddFee(boolean addFee){
+        this.addFee = addFee;
     }
 
     public void setFair(int fair){

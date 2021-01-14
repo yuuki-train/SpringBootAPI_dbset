@@ -45,6 +45,7 @@ public class TrainsController {
         trains.setArvHour(updatedTrains.getArvHour());
         trains.setArvMinute(updatedTrains.getArvMinute());
         trains.setTrainType(updatedTrains.getTrainType());
+        trains.setAddFee(updatedTrains.getAddFee());
         trains.setFair(updatedTrains.getFair());
         trains.setFee(updatedTrains.getFee());
         trains.setChangeTrain(updatedTrains.getChangeTrain());
